@@ -1,0 +1,166 @@
+* {
+  padding: 0;
+  margin: 0;
+
+  box-sizing: border-box;
+
+  font-family: 'Indie Flower', cursive;
+  color: #eee;
+}
+
+body {
+  background: url('https://img.freepik.com/fotos-gratis/fundo-escuro-da-rua-reflexo-de-neon-azul-e-vermelho-no-asfalto_129911-33.jpg?size=626&ext=jpg') no-repeat center center fixed;
+  background-size: cover;
+  /* background-repeat: no-repeat;
+  background-position: center center fixed; */
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  padding: 30px;
+  margin-bottom: 150px;
+
+  border-bottom: 1px dotted #eee;
+}
+
+header div img {
+  width: 2rem;
+}
+
+header ul {
+  list-style: none;
+
+  display: flex;
+}
+
+header ul li {
+  padding: 15px;
+}
+
+a {
+  text-decoration: none;
+  transition: all .3s;
+}
+
+a:hover {
+  color: #2495f2; 
+  font-size: 15px;
+  text-shadow: 1px 1px 2px #2495f2;
+}
+
+.container {
+  text-align: center;
+  
+}
+
+.container .name h1 {
+  font-family: 'Palette Mosaic', cursive;
+  font-size: 4rem;
+}
+
+.container .name h5 {
+  font-size: 2rem;
+}
+
+.container #arrow {
+  font-size: 2rem;
+  padding: 20px 0;
+
+  transform: rotate(90deg);
+  cursor: pointer;
+
+  animation: blink 2s steps(4, start) infinite;
+}
+
+@keyframes blink {
+  to {
+    visibility: hidden;
+  }
+}
+
+#animation {
+  transition: .3s;
+}
+
+.arrow-rotate {
+  transform: rotate(180deg);
+  transition: .3s;
+}
+
+.about-active {
+  display: block !important;
+}
+
+.container #about {
+  margin-bottom: 20px;
+}
+
+.container #about p {
+  max-width: 600px;
+  margin: 0 auto;
+
+  text-align: left;
+  font-size: 1.5rem;
+}
+
+.form {
+  width: 40%;
+  margin: 0 auto;
+}
+
+.form input {
+  width: 50%;
+  padding: 5px 10px;
+
+  border: none;
+  border-radius: 5px 0px 0px 5px;
+
+  outline: none;
+  color: #636363;
+}
+
+.form button {
+  width: fit-content;
+  padding: 5px 10px;
+  margin-left: -6px;
+
+  border: none;
+  border-radius: 0px 5px 5px 0px;
+
+  background-color: #b20795;
+  cursor: pointer;
+
+  transition: all .4s ease-out;
+}
+
+.form button:hover {
+  background-color: #2495f2;
+}
+
+.form div p {
+  color: #b20795;
+  font-size: 1.5rem;
+  padding: 10px;
+}
+
+@media only screen and (max-width: 480px) {
+  header {
+    margin-bottom: 20%;
+  }
+
+  header div img {
+    display: none;
+  }
+
+  .container #about p {
+    max-width: 80%;
+    text-align: justify;
+  }
+
+  .form {
+    width: 80%;
+  }
+}
